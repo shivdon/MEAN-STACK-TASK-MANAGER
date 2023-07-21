@@ -1,0 +1,20 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Update Task</h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="modalRef.close()"
+  ></button>
+</div>
+<div class="modal-body">
+    <div class="mb-6">
+        <input #titleInput type="text" placeholder="{{ title }}" class="bg-white border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
+    Close
+  </button>
+  <button type="button" class="btn btn-primary text-blue-300" (click)="updateTaskTitle(taskId, titleInput.value)">Save changes</button>
+</div>

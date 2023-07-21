@@ -1,0 +1,10 @@
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: #ffffff;
+  flex-direction: column;
+  gap: 20px;
+}
